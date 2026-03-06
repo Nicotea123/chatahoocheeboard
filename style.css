@@ -1,25 +1,14 @@
-body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6f8; color: #333; }
-
-.hero { background-size: cover; background-position: center; padding: 20px 40px 60px; color: white; min-height: 250px; }
-.top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
-.user-avatar { background: #90caf9; color: #0d47a1; padding: 5px 10px; border-radius: 50%; font-weight: bold; }
-
-.yellow-cards-container { display: flex; gap: 15px; }
-.y-card { background: white; color: #333; padding: 15px; border-radius: 4px; flex: 1; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.3); font-size: 13px; }
-.y-bar { background: #cc9900; height: 8px; width: 100%; position: absolute; top: 0; left: 0; border-radius: 4px 4px 0 0; }
-
-.sub-nav { background: white; display: flex; justify-content: space-between; padding: 0 40px; border-bottom: 1px solid #ddd; align-items: center; height: 50px; }
-.active { color: #0288d1; border-bottom: 3px solid #0288d1; font-weight: bold; padding: 13px 0; }
-.tabs span { margin-right: 20px; cursor: pointer; color: #666; font-size: 14px; }
-.view-all { color: #0288d1; font-weight: bold; font-size: 12px; }
-
-.main-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 30px 40px; }
-.card { background: white; border-radius: 8px; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 20px; }
+body { font-family: sans-serif; margin: 0; background: #f0f2f5; }
+.hero { background-size: cover; padding: 20px 40px 60px; color: white; }
+.top-nav { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.avatar { background: #90caf9; border-radius: 50%; padding: 5px 10px; }
+.yellow-row { display: flex; gap: 15px; }
+.y-card { background: white; color: #333; padding: 15px; border-radius: 4px; flex: 1; position: relative; }
+.bar { background: #cc9900; height: 8px; width: 100%; position: absolute; top: 0; left: 0; border-radius: 4px 4px 0 0; }
+.tabs-bar { background: white; padding: 15px 40px; border-bottom: 1px solid #ddd; font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 30px 40px; }
+.card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 .img-card { padding: 0; overflow: hidden; }
-.img-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-.grade-circle { border: 2px solid #00a884; color: #00a884; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; font-weight: bold; float: right; }
-.grade-circle.empty { border-color: #ccc; color: #ccc; }
-.class-item { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
-.btn-blue { width: 100%; border: 1px solid #0288d1; color: #0288d1; background: white; padding: 8px; border-radius: 4px; margin-top: 15px; cursor: pointer; }
-.progress-box { border: 4px solid #cc9900; border-radius: 50%; width: 70px; height: 70px; margin: 10px auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.img-card img { width: 100%; height: 100%; object-fit: cover; }
+.grade { border: 2px solid #4caf50; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; float: right; }
+.progress { border: 4px solid #cc9900; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; margin: auto; }
