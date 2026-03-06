@@ -3,52 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Dashboard Educativo</title>
+    <title>Chatahoochee Board</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header class="main-header">
-        <div class="header-left">
-            <span class="menu-icon">☰</span>
-            <div class="logo-placeholder">✨ LOGO</div>
-        </div>
-        <div class="header-right">
-            <span class="icon">📅</span>
-            <span class="icon">🔔</span>
-            <div class="user-avatar">A</div>
+        <nav class="top-nav">
+            <div class="menu-icon">☰</div>
+            <img src="logo.png" alt="Logo" class="logo-small">
+            <div class="nav-icons">📅 🔔 <span class="user-circle">A</span></div>
+        </nav>
+
+        <div class="promo-container">
+            <div class="promo-card">
+                <div class="yellow-bar"></div>
+                <p>Are we still friends? Review the Quick Contact Info Tune Up card to make sure your info is correct.</p>
+                <span>1 of 3</span>
+            </div>
+            <div class="promo-card">
+                <div class="yellow-bar"></div>
+                <p>Need help completing the FAFSA? Attend our workshop - Mar 10th @ North Metro Building...</p>
+                <a href="#">Workshop Information HERE</a>
+                <span>2 of 3</span>
+            </div>
+            <div class="promo-card">
+                <div class="yellow-bar"></div>
+                <p>Graduating this semester? Secure your spot to walk in the May ceremony!</p>
+                <button class="btn-register">Register NOW for Graduation</button>
+                <span>3 of 3</span>
+            </div>
         </div>
     </header>
 
-    <section class="banner-section">
-        <div class="promo-cards">
-            <div class="yellow-card">
-                <p>Are we still friends? Review the Quick Contact Info Tune Up card to make sure your info is correct.</p>
-                <span class="card-footer">1 of 3</span>
+    <div class="tabs">
+        <span class="tab active">Home</span>
+        <span class="tab">Academics</span>
+        <span class="tab">Community</span>
+        <span class="tab">My Account</span>
+        <span class="view-all">🔍 VIEW ALL CARDS</span>
+    </div>
+
+    <main class="dashboard-grid">
+        <div class="content-card">
+            <h3>Quick Contact Info Tune Up 🔒</h3>
+            <p><strong>Have you peeked at your personal contact info lately?</strong></p>
+            <p>If not, it's the perfect moment for a quick check-in!</p>
+            <ul>
+                <li>Give it a look here...</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h3>Blackboard Classes 🎓</h3>
+            <div class="class-item">
+                <span>ENGL 1101 Composition</span>
+                <span class="grade-circle">B</span>
             </div>
-            <div class="yellow-card">
-                <p>Need help completing the FAFSA? Attend our workshop - Mar 10th @ North Metro Building A-106 11AM-2PM</p>
-                <a href="#" class="card-link">Workshop Information HERE</a>
-                <span class="card-footer">2 of 3</span>
-            </div>
-            <div class="yellow-card">
-                <p>Graduating this semester? Secure your spot to walk in the May ceremony!</p>
-                <button class="btn-register">Register NOW for Graduation</button>
-                <span class="card-footer">3 of 3</span>
+            <div class="class-item">
+                <span>ESCI 1020 Intro to GIS</span>
+                <span class="grade-circle gray">-</span>
             </div>
         </div>
-    </section>
 
-    <nav class="sub-nav">
-        <ul>
-            <li class="active">Home</li>
-            <li>Academics</li>
-            <li>Community</li>
-            <li>My Account</li>
-        </ul>
-        <div class="view-all">🔍 VIEW ALL CARDS</div>
-    </nav>
+        <div class="content-card">
+            <h3>Upcoming Dates 🔒</h3>
+            <img src="registro-dates.png" alt="Dates" class="card-img">
+        </div>
+
+        <div class="content-card">
+            <h3>Registration (NEW) 🔒</h3>
+            <p>Spring Semester 2026</p>
+            <button class="btn-outline">VIEW DETAILS</button>
+        </div>
+    </main>
 
 </body>
 </html>
